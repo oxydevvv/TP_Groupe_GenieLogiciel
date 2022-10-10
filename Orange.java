@@ -2,17 +2,17 @@
  *
  * @author roudet
  */
-public class Orange {
+public class Orange implements Fruit{
     private double prix;
     private String origine;
-
-    public Orange()
+	
+    public Orange() 
     {
         this.prix = 0.5;  //prix en euros
         this.origine="Espagne";
     }
-
-    public Orange(double prix, String origine)
+    
+    public Orange(double prix, String origine) 
     {
 	if(prix < 0)
 	    this.prix = -prix;  //une solution possible pour interdire les prix negatifs
@@ -22,7 +22,7 @@ public class Orange {
 	if(origine.equals(""))
             this.origine = "Espagne";  //Espagne par défaut
 	else
-            this.origine = origine;
+            this.origine = origine;   
     }
 
     public double getPrix(){
@@ -36,7 +36,7 @@ public class Orange {
     public String getOrigine(){
 	return origine;
     }
-
+ 
     public void setOrigine(String origine){
 	this.origine=origine;
     }
@@ -62,18 +62,6 @@ public class Orange {
 
     public static void main (String[] args){
         //Ecrire ici vos tests
-	       System.out.println("premier test Orange");
-         Orange orange_1 = new Orange();
-         Orange orange_2 = new Orange(0.6, "Corée du Nord");
-         Orange orange_3 = new Orange(0.5, "Espagne");
-
-         if( orange_1.equals(orange_3) && !(orange_1.equals(orange_2)) && orange_2.getPrix() == 0.6 && orange_1.getClass() ==  orange_2.getClass() )
-         {
-           System.out.println("TRUE");
-         }
-         else
-         {
-           System.out.println("FALSE");
-         }
+	System.out.println("premier test Orange");
    }
 }
