@@ -63,5 +63,10 @@ public class Orange implements Fruit{
     public static void main (String[] args){
         //Ecrire ici vos tests
 	System.out.println("premier test Orange");
+	testGetPrix();
+	testGetOrigine();
+	testIsSeedless();
+	testEquals();
+	testToString();
    }
 }
