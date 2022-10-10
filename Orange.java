@@ -2,7 +2,7 @@
  *
  * @author roudet
  */
-public class Orange implements Fruit{
+public class Orange implements Fruit extends OrangeTest {
     private double prix;
     private String origine;
 	
