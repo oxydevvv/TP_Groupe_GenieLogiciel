@@ -1,13 +1,15 @@
+import org.junit.Test;
+
 public class OrangeTest extends FruitSimpleTest
 {
 
 	 // implementation of the abstract factory methods
-	 FruitSimple createFruit(double prix, String origine) 
+	 Fruit createFruit(double prix, String origine) 
 	 {
 	 	return new Orange(prix, origine);
 	 }
 
-	 FruitSimple createFruitNull()
+	 Fruit createFruitNull()
 	 {
 	 	return null;
 	 }

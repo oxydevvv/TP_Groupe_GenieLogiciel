@@ -1,32 +1,31 @@
+import org.junit.Test;
+
 public abstract class FruitSimpleTest 
 {
 	 // the factory methods
-	 abstract FruitSimple createFruit(double prix, String origine);
-	 abstract FruitSimple createFruitNull();
+	 abstract Fruit createFruit(double prix, String origine);
+	 abstract Fruit createFruitNull();
 
-	 @Test
 	 public void testGetPrix() 
 	 {
-	 	FruitSimple fn = createFruitNull();
-	 	FruitSimple fs = createFruit(0.5, "France");
+	 	Fruit fs = createFruit(0.5, "France");
 	 	double expectedPrice = 0.5;
-	 	assertTrue( expectedPrice == fs.getPrix() );
-	 	assertTrue( null == fn.getPrix() );
+	 	boolean b = expectedPrice == fs.getPrix();
+		assertTrue( b );
 	 }
 
 	 public void testGetOrigine()
 	 {
-	 	FruitSimple fn = createFruitNull();
-	 	FruitSimple fs = createFruit(0.5, "France");
-		double expectedCountry = "France";
-		assertTrue( expectedCountry == fs.getOrigine() );
-		assertTrue( null == fn.getOrigine() );
+	 	Fruit fs = createFruit(0.5, "France");
+		String expectedCountry = "France";
+		boolean b = expectedCountry.equals(fs.getOrigine());
+		assertTrue( b );
 	 }
 
 	 public void testEquals()
 	 {
 
-	 	FruitSimple[] fruits = new FruitSimple[] {
+	 	Fruit[] fruits = new Fruit[] {
 	 		createFruit(0.5, "France"),
 	 		createFruit(0.5, "France"),
 	 		createFruit(0.35, "Maroc"),
