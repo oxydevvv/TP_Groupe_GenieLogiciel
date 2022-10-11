@@ -63,26 +63,12 @@ public class Pomme implements Fruit{
     public static void main (String[] args)
     {
         //Ecrire ici vos tests
-
-        System.out.println("1e test Pomme");
-
-        Pomme Pomme1 = new Pomme();
-        System.out.println("Constructeur par défaut : " + Pomme1.toString() + "\n");
-
-        System.out.println("2e test Pomme");
-
-        Pomme Pomme2 = new Pomme(1.0, "France");
-        System.out.println("Valeurs avant modification : " + Pomme2.toString());
-
-        Pomme2.setPrix(1.25);
-        System.out.println("Prix après modification : " + Pomme2.getPrix());
-
-        Pomme2.setOrigine("Etats-Unis");
-        System.out.println("Origine après modification : " + Pomme2.getOrigine());
-
-        System.out.println("Valeurs après modification : " + Pomme2.toString() + "\n");
-
-        System.out.println("3e test Pomme");
-        System.out.println("Les deux Pommes ont les mêmes caractériques ? " + Pomme1.equals(Pomme2));
-    }
+    	System.out.println("premier test Pomme");
+        PommeTest test = new PommeTest();
+    	test.testGetPrix();
+    	test.testGetOrigine();
+    	test.testIsSeedless();
+        test.testToString();
+    	test.testEquals();
+   }
 }
