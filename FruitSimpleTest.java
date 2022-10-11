@@ -48,10 +48,10 @@ public abstract class FruitSimpleTest
 	 	createFruit(0.4, "Maroc")
 		};
 
-	 	assertTrue( true == ( fruits[0].equals(fruits[1]) ) );
-	 	assertTrue( false == ( fruits[0].equals(fruits[2]) ) );
-	 	assertTrue( false == ( fruits[0].equals(fruits[3]) ) );
-	 	assertTrue( false == ( fruits[2].equals(fruits[4]) ) );
+	 	assertTrue( fruits[0].equals(fruits[1]) );
+	 	assertFalse( fruits[0].equals(fruits[2]) );
+	 	assertFalse( fruits[0].equals(fruits[3]) );
+	 	assertFalse( fruits[2].equals(fruits[4]) );
 	 
 	}
 
