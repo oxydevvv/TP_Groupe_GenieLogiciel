@@ -1,0 +1,16 @@
+fr/ufrsciencestech/groupe3/view/VueConsole.class
+fr/ufrsciencestech/groupe3/view/VueIHM.class
+fr/ufrsciencestech/groupe3/model/PanierPleinException.class
+fr/ufrsciencestech/groupe3/model/Fruit.class
+fr/ufrsciencestech/groupe3/model/Panier.class
+fr/ufrsciencestech/groupe3/view/VueG.class
+TestMVC.class
+fr/ufrsciencestech/groupe3/model/Macedoine.class
+fr/ufrsciencestech/groupe3/model/Orange.class
+fr/ufrsciencestech/groupe3/model/Durian.class
+fr/ufrsciencestech/groupe3/controler/Controler.class
+fr/ufrsciencestech/groupe3/model/PanierVideException.class
+fr/ufrsciencestech/groupe3/view/Vue.class
+fr/ufrsciencestech/groupe3/model/Pamplemousse.class
+fr/ufrsciencestech/groupe3/model/Pomme.class
+fr/ufrsciencestech/groupe3/model/Modele.class
