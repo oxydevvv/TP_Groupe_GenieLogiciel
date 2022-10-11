@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import java.util.ArrayList;
-
 public class Macedoine
 {
     private ArrayList<Fruit> fruits;
@@ -46,9 +44,14 @@ public class Macedoine
         }
     }
 
+    public void ajoute(Jus jus)
+    {
+        this.ajoute(jus.getFruit());
+    }
+
     public String toString()
     {
-        string s = "Macedoine : \n";
+        String s = "Macedoine : \n";
         for(Fruit f : fruits)
         {
             s = s + f.toString+ "\n";
