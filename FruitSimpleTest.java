@@ -7,6 +7,12 @@ public abstract class FruitSimpleTest
 		else {System.out.println("Fail !");}
 	}
 
+	static void assertFalse(boolean b)
+	{
+		if(!b) {System.out.println("Success !");}
+		else {System.out.println("Fail !");}
+	}
+
 	// the factory methods
 	abstract Fruit createFruit(double prix, String origine);
 	abstract Fruit createFruitNull();
@@ -40,7 +46,7 @@ public abstract class FruitSimpleTest
 	 	createFruit(0.35, "Maroc"),
 	 	createFruit(0.5, "Italie"),
 	 	createFruit(0.4, "Maroc")
-	};
+		};
 
 	 	assertTrue( true == ( fruits[0].equals(fruits[1]) ) );
 	 	assertTrue( false == ( fruits[0].equals(fruits[2]) ) );
