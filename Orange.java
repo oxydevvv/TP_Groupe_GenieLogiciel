@@ -67,12 +67,12 @@ public class Orange implements Fruit {
     {
         //Ecrire ici vos tests
     	System.out.println("premier test Orange");
-        OrangeTest ot = new OrangeTest();
-    	ot.testGetPrix();
-    	ot.testGetOrigine();
-    	ot.testIsSeedless();
-        ot.testToString();
-    	ot.testEquals();
+        OrangeTest test = new OrangeTest();
+    	test.testGetPrix();
+    	test.testGetOrigine();
+    	test.testIsSeedless();
+        test.testToString();
+    	test.testEquals();
    }
 }
 
